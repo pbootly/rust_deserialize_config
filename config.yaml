@@ -1,0 +1,10 @@
+---
+global_name: "mr. global"
+
+address:
+  number: 32
+  street: "The lane"
+
+country:
+  isocode: 826
+  isostring: "GB"
