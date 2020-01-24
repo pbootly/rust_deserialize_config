@@ -28,7 +28,7 @@ struct Country {
 }
 
 fn main() {
-    // Read config.yaml into a string `data` to then parse into toml::from_str
+    // Read config.yaml into a string `data` to then parse into yaml::from_str
     let data = fs::read_to_string("./config.yaml").expect("Unable to read file");
 
     let decoded: Config = serde_yaml::from_str(&data).unwrap();

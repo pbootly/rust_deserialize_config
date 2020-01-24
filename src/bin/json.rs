@@ -1,5 +1,5 @@
 /*
- * Simple example of decoding a .yaml file using deserialize
+ * Simple example of decoding a .json file using deserialize
  * JSON into a Rust struct
  */
 
@@ -28,7 +28,7 @@ struct Country {
 }
 
 fn main() {
-    // Read config.json into a string `data` to then parse into toml::from_str
+    // Read config.json into a string `data` to then parse into serde_json::from_str
     let data = fs::read_to_string("./config.json").expect("Unable to read file");
 
     let decoded: Config = serde_json::from_str(&data).unwrap();
